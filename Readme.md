@@ -1,9 +1,9 @@
-#Roman Numerals Kata
+# Roman Numerals Kata
 
-###Your Task
+### Your Task
 Write a method String convert(int) that takes a number and converts it to the according String representation.
 
-###Examples
+### Examples
 ```1 ➔ I
 2 ➔ II
 3 ➔ III
