@@ -61,33 +61,14 @@ class RomanNumeralsKataAcceptanceTest {
         assertEquals(convert(523), "DXXIII")
     }
 
-    @Test
-    fun `it should convert 1719 to roman numeral`(){
-        assertEquals("MDCCXIX", convert(1719))
-    }
-
-    @Test
-    fun `it should convert 3724 to roman numeral`(){
-        assertEquals("MMMDCCXXIV", convert(3724))
-    }
-
-    @Test
-    fun `it should convert 79 to roman numeral`(){
-        assertEquals("LXXIX", convert(79))
-    }
-
-    @Test
-    fun `it should convert 904 to roman numeral`(){
-        assertEquals("CMIV", convert(904))
-    }
-
-    @Test
-    fun `it should convert 3528 to roman numeral`(){
-        assertEquals("MMMDXXVIII", convert(3528))
-    }
-
     @ParameterizedTest
-    @CsvSource("CMIV,904",
+    @CsvSource(
+        "MDCCXIX,1719",
+        "MMMDCCXXIV,3724",
+        "LXXIX,79",
+        "CMIV,904",
+        "MMMDXXVIII,3528",
+        "CMIV,904",
         "DXXV,525",
         "XXVII,27",
         "LIII,53",
