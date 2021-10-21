@@ -3,13 +3,17 @@ open class RomanNumeralsKata {
         if( number == 4) return "IV"
         if( number == 5) return "V"
         if( number == 6) return "VI"
-        return printI(number)
+        return printRomanNumber(number)
     }
 
-    private fun printI(times: Int): String {
+    private fun printRomanNumber(times: Int): String {
         var returnValue = ""
         for(i in 1..times){
-            returnValue += "I"
+            if ( i == 5){
+                returnValue = "V"
+            } else {
+                returnValue += "I"
+            }
         }
         return returnValue
     }
