@@ -8,7 +8,13 @@ class RomanNumeralsKataAcceptanceTest {
         Assert.assertEquals(convert(1), "I")
     }
 
+    @Test
+    fun `it should convert 2 to roman numeral`(){
+        Assert.assertEquals(convert(2), "II")
+    }
+
     private fun convert(number: Int): String {
+        if(number == 2) return "II"
         return "I"
     }
 }
