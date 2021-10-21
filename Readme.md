@@ -25,5 +25,6 @@ This kata lures a lot of people to implement features in the order of the number
 ## To enable this plugin:
 1. We need to go to the on top `Tool Bar IntelliJ IDEA` -> `Preferences` -> `Plugins` and look for the plugin `Limited WIP`.
 2. Once installed, activate the plugin and restart the IDE.
-3. Go to `Plugins` again and enable the follow options:
-(TBD)
+3. Go to `Plugins` again and enable the follow options and then Apply:
+
+![img.png](img.png)
