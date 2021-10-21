@@ -81,6 +81,11 @@ class RomanNumeralsKataAcceptanceTest {
         assertEquals("CMIV", convert(904))
     }
 
+    @Test
+    fun `it should convert 3528 to roman numeral`(){
+        assertEquals("MMMDXXVIII", convert(3528))
+    }
+
     @ParameterizedTest
     @CsvSource("CMIV,904",
         "DXXV,525",
