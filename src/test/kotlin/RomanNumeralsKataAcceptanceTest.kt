@@ -4,6 +4,11 @@ import kotlin.test.assertEquals
 class RomanNumeralsKataAcceptanceTest : RomanNumeralsKata() {
 
     @Test
+    fun `it should convert 7 to the roman numeral interpretaion`(){
+        assertEquals("VII", convert(7))
+    }
+
+    @Test
     fun `it should convert 6 to the roman numeral interpretaion`(){
         assertEquals("VI", convert(6))
     }
