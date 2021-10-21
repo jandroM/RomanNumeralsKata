@@ -1,6 +1,5 @@
 
 import org.junit.jupiter.api.Assertions.assertEquals
-import org.junit.jupiter.api.Test
 import org.junit.jupiter.params.ParameterizedTest
 import org.junit.jupiter.params.provider.CsvSource
 
@@ -33,7 +32,7 @@ class RomanNumeralsKataAcceptanceTest {
         "CMXVI,916",
         "DXCVI,596",
         "XXXVI,36")
-    internal fun name(roman:String,number:Int) {
+    internal fun `converts a number to a roman numeral`(roman:String, number:Int) {
         assertEquals(roman, convert(number))
     }
 
