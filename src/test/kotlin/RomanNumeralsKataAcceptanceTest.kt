@@ -13,7 +13,13 @@ class RomanNumeralsKataAcceptanceTest {
         Assert.assertEquals(convert(2), "II")
     }
 
+    @Test
+    fun `it should convert 3 to roman numeral`(){
+        Assert.assertEquals(convert(3), "III")
+    }
+
     private fun convert(number: Int): String {
+        if(number == 3) return "III"
         if(number == 2) return "II"
         return "I"
     }
