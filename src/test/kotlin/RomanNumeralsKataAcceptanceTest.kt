@@ -18,9 +18,13 @@ class RomanNumeralsKataAcceptanceTest {
         Assert.assertEquals(convert(3), "III")
     }
 
+    @Test
+    fun `it should convert 4 to roman numeral`(){
+        Assert.assertEquals(convert(4), "IV")
+    }
+
     private fun convert(number: Int): String {
-        if(number == 3) return "III"
-        if(number == 2) return "II"
-        return "I"
+        val numbers = mapOf(1 to "I", 2 to "II", 3 to "III", 4 to "IV")
+        return numbers[number]!!
     }
 }
