@@ -111,8 +111,6 @@ class RomanNumeralsKataAcceptanceTest {
             9 to "IX",
             5 to "V",
             4 to "IV",
-            3 to "III",
-            2 to "II",
             1 to "I")
         while (tempNumber > 0){
             for ((k,v) in numbers){
