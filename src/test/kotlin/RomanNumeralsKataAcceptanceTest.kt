@@ -6,9 +6,11 @@ class RomanNumeralsKataAcceptanceTest {
     @Test
     fun `it should do whatever`(){
         assertEquals("I", convert(1))
+        assertEquals("II", convert(2))
     }
 
     private fun convert(number: Int): String {
-        return "I"
+        if (number == 1) return "I"
+        else return "II"
     }
 }
