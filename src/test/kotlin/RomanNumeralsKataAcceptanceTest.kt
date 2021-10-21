@@ -8,5 +8,6 @@ class RomanNumeralsKataAcceptanceTest : RomanNumeralsKata() {
         assertEquals("I", convert(1))
         assertEquals("II", convert(2))
         assertEquals("III", convert(3))
+        assertEquals("IV", convert(4))
     }
 }
