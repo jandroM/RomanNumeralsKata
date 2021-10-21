@@ -4,6 +4,7 @@ open class RomanNumeralsKata {
 
         for(i in 1..number){
             when (i) {
+                9 -> returnValue = "IX"
                 5 -> returnValue = "V"
                 4 -> returnValue = "IV"
                 else ->returnValue += "I"
