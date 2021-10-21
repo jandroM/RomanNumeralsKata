@@ -28,10 +28,15 @@ class RomanNumeralsKataAcceptanceTest {
         Assert.assertEquals(convert(14), "XIV")
     }
 
+    @Test
+    fun `it should convert 29 to roman numeral`(){
+        Assert.assertEquals(convert(29), "XXIX")
+    }
+
     private fun convert(number: Int): String {
         var result  = ""
         var tempNumber = number
-        val numbers = mapOf(10 to "X", 5 to "V", 4 to "IV",3 to "III", 2 to "II", 1 to "I")
+        val numbers = mapOf(20 to "XX", 10 to "X", 9 to "IX", 5 to "V", 4 to "IV",3 to "III", 2 to "II", 1 to "I")
         while (tempNumber > 0){
             numbers.forEach{(k,v)->
                 if(tempNumber >= k){
