@@ -99,10 +99,10 @@ class RomanNumeralsKataAcceptanceTest {
             4 to "IV",
             1 to "I")
         while (tempNumber > 0){
-            for ((k,v) in numbers){
-                if(tempNumber >= k){
-                    result += v
-                    tempNumber -= k
+            for ((key,value) in numbers){
+                if(tempNumber >= key){
+                    result += value
+                    tempNumber -= key
                     break
                 }
             }
