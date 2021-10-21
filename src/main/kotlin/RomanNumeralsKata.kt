@@ -1,6 +1,7 @@
 open class RomanNumeralsKata {
     fun convert(number: Int): String {
         if( number == 4) return "IV"
+        if( number == 5) return "V"
         return printI(number)
     }
 
