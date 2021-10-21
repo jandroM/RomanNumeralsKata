@@ -5,39 +5,13 @@ import org.junit.jupiter.params.ParameterizedTest
 import org.junit.jupiter.params.provider.CsvSource
 
 class RomanNumeralsKataAcceptanceTest {
-
-    @Test
-    fun `it should convert 1 to roman numeral`(){
-        assertEquals(convert(1), "I")
-    }
-
-    @Test
-    fun `it should convert 2 to roman numeral`(){
-        assertEquals(convert(2), "II")
-    }
-
-    @Test
-    fun `it should convert 3 to roman numeral`(){
-        assertEquals(convert(3), "III")
-    }
-
-    @Test
-    fun `it should convert 4 to roman numeral`(){
-        assertEquals(convert(4), "IV")
-    }
-
-    @Test
-    fun `it should convert 14 to roman numeral`(){
-        assertEquals(convert(14), "XIV")
-    }
-
-    @Test
-    fun `it should convert 29 to roman numeral`(){
-        assertEquals(convert(29), "XXIX")
-    }
-
     @ParameterizedTest
     @CsvSource(
+        "I,1",
+        "II,2",
+        "III,3",
+        "IV,4",
+        "XIV,14",
         "XXIX,29",
         "LIV,54",
         "IC,99",
