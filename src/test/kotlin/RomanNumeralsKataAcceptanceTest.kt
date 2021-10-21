@@ -43,6 +43,11 @@ class RomanNumeralsKataAcceptanceTest {
         Assert.assertEquals(convert(99), "IC")
     }
 
+    @Test
+    fun `it should convert 101 to roman numeral`(){
+        Assert.assertEquals(convert(101), "CI")
+    }
+
     private fun convert(number: Int): String {
         var result  = ""
         var tempNumber = number
