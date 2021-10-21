@@ -58,10 +58,16 @@ class RomanNumeralsKataAcceptanceTest {
         Assert.assertEquals(convert(523), "DXXIII")
     }
 
+    @Test
+    fun `it should convert 1719 to roman numeral`(){
+        Assert.assertEquals("MDCCXIX", convert(1719))
+    }
+
     private fun convert(number: Int): String {
         var result  = ""
         var tempNumber = number
         val numbers = mapOf(
+            1000 to "M",
             500 to "D",
             100 to "C",
             99 to "IC",
