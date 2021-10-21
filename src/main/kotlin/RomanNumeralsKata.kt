@@ -4,10 +4,7 @@ open class RomanNumeralsKata {
 
         for(i in 1..number){
             if (i > 10) {
-                val dec: Int = 10
                 val uni: Int = i % 10
-                returnValue = ""
-                returnValue = generate(dec, returnValue)
                 returnValue = generate(uni, returnValue)
             }
             else {
