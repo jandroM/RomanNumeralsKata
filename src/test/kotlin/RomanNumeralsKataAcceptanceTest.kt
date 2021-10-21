@@ -73,11 +73,16 @@ class RomanNumeralsKataAcceptanceTest {
         Assert.assertEquals("LXXIX", convert(79))
     }
 
+    @Test
+    fun `it should convert 904 to roman numeral`(){
+        Assert.assertEquals("CMIV", convert(904))
+    }
     private fun convert(number: Int): String {
         var result  = ""
         var tempNumber = number
         val numbers = mapOf(
             1000 to "M",
+            900 to "CM",
             500 to "D",
             100 to "C",
             99 to "IC",
