@@ -63,6 +63,16 @@ class RomanNumeralsKataAcceptanceTest {
         Assert.assertEquals("MDCCXIX", convert(1719))
     }
 
+    @Test
+    fun `it should convert 3724 to roman numeral`(){
+        Assert.assertEquals("MMMDCCXXIV", convert(3724))
+    }
+
+    @Test
+    fun `it should convert 79 to roman numeral`(){
+        Assert.assertEquals("LXXIX", convert(79))
+    }
+
     private fun convert(number: Int): String {
         var result  = ""
         var tempNumber = number
